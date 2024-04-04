@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+        <style>
+            p,
+            .heading {
+                font-family: monospace;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <form style="display: inline-block; margin-left: 30%">
+            <div>
+                <p>Student's Name</p>
+                <input type="text" placeholder="first name" /><input
+                    type="text"
+                    placeholder="middle name"
+                /><input type="text" placeholder="last name" />
+            </div>
+            <div>
+                <p>Father's Name</p>
+                <input
+                    type="text"
+                    placeholder="Enter your father's name"
+                /><input type="text" placeholder="middle name" />
+            </div>
+            <div>
+                <p>Mother's Name</p>
+                <input type="text" placeholder="Enter your mother's name" />
+            </div>
+            <div>
+                <p>Date of Birth</p>
+                <input type="date" />
+            </div>
+            <div>
+                <p>Gender</p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" />
+            </div>
+            <div>
+                <p>Category</p>
+                <label for="gen">GEN</label>
+                <input type="radio" id="gen" name="category" />
+                <label for="obc">OBC</label>
+                <input type="radio" id="obc" name="category" />
+                <label for="sc/st">SC/ST</label>
+                <input type="radio" id="sc/st" name="category" />
+            </div>
+            <div>
+                <p>Handicaped</p>
+                <label for="yes">Yes</label>
+                <input type="radio" name="handicaped" id="yes" />
+                <label for="no">No</label>
+
+                <input type="radio" name="handicaped" id="no" />
+            </div>
+            <div>
+                <p>Ex-Serviceman</p>
+                <label for="yes">Yes</label>
+                <input type="radio" name="exServiceman" id="yes" />
+                <label for="no">No</label>
+                <input type="radio" name="exServiceman" id="no" />
+            </div>
+            <div>
+                <p>EWS</p>
+                <label for="yes">Yes</label>
+                <input type="radio" name="ews" id="yes" />
+                <label for="no">No</label>
+                <input type="radio" name="ews" id="no" />
+            </div>
+            <br />
+            <div>
+                <label for="email" class="heading">Email</label>
+                <input type="email" placeholder="enter email address " />
+            </div>
+            <br />
+
+            <div>
+                <label class="heading" for="mobile">Mobile No</label>
+                <input type="text" placeholder="enter mobile number" />
+            </div>
+            <br />
+
+            <div>
+                <label class="heading">State</label>
+                <select>
+                    <option name="state" selected id="">Select any one</option>
+                    <option name="state" id="hp">Himachal Pradesh</option>
+                    <option name="state" id="delhi">Delhi</option>
+                    <option name="state" id="mp">Madhya Pradesh</option>
+                    <option name="state" id="punjab">Punjab</option>
+                    <option name="state" id="kerela">Kerela</option>
+                </select>
+            </div>
+            <br />
+
+            <div>
+                <label class="heading">City</label>
+                <select>
+                    <option name="state" selected id="">Select any one</option>
+                    <option name="state" id="kangra">Kangra</option>
+                    <option name="state" id="kullu">Kullu</option>
+                    <option name="state" id="mandi">Mandi</option>
+                    <option name="state" id="chamba">Chamba</option>
+                    <option name="state" id="solan">Solan</option>
+                </select>
+            </div>
+            <br />
+
+            <div>
+                <label class="heading" for="photo"> Upload Photo </label>
+                <input type="file" id="photo" />
+            </div>
+            <br />
+
+            <div>
+                <label class="heading" for="photo"> Upload Signature </label>
+                <input type="file" id="photo" />
+            </div>
+            <br />
+
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
